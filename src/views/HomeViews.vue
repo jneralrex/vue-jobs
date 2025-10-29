@@ -1,5 +1,4 @@
 <script setup>
-import Navbar from '@/components/Navbar.vue';
 import Hero from '@/components/Hero.vue';
 import HomeCards from '@/components/HomeCards.vue';
 import Joblistings from '@/components/Joblistings.vue';
@@ -8,5 +7,5 @@ import Joblistings from '@/components/Joblistings.vue';
 <template>
 <Hero />
 <HomeCards/>
-<Joblistings :limit="3" :showButton/>
+<Joblistings :limit="3" showButton />
 </template>
