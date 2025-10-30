@@ -43,9 +43,9 @@ const truncatedDes = computed(() => {
       <!-- Salary Range -->
       <h3 class="text-green-500 mb-2">
         <span class="text-gray-600">
-       Salary
-       </span> 
-         {{ job.salary_from.toLocaleString() }} - {{ job.salary_to.toLocaleString() }} / Year
+          Salary
+        </span>
+        {{ job.salary_from.toLocaleString() }} - {{ job.salary_to.toLocaleString() }} / Year
       </h3>
 
       <!-- Divider -->
@@ -59,12 +59,10 @@ const truncatedDes = computed(() => {
           <span v-if="job.is_remote_work" class="text-sm text-green-600 ml-2">(Remote)</span>
         </div>
 
-       <RouterLink 
-  :to="`/jobs/${Math.floor(Math.random() * 6) + 1}`"
-  class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm"
->
-  Read More
-</RouterLink>
+        <RouterLink :to="`/jobs/${Math.floor(Math.random() * 0) + 1}`"
+          class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm">
+          Read More
+        </RouterLink>
 
       </div>
 
